@@ -1,4 +1,4 @@
-# README & DOCUMENTATION
+# Documentation
 
 ## Introduction
 
