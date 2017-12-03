@@ -35,7 +35,9 @@ This concludes the automation process for "myScropt.sh".
 
 ## Additional Notes
 
-All front end code can be found inside the 'docs' folder. The rest of the directories are dedicated to the various processes and functions of the back end. 
+Detailed information about the necessary cron configurations can be found in the local file, [cronManifest.md](https://cryptobase.info/cronManifest.md)
+
+All front end code can be found inside the 'docs' folder. The rest of the directories are dedicated to the various processes and functions of the cryptobase back end. 
 
 ## Attribution
 
