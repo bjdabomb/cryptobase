@@ -1,10 +1,10 @@
-# CryptoBase
+# README & DOCUMENTATION
 
 ## Introduction
 
 CryptoBase is designed to be a ready-to-deploy all inclusive information dominance system for the blockchain industry. It contains an ever-increasing series of lightweight shell scripts that will instantly begin collecting publicly available social and economic intelligence which can then be analyzed in whatever manner one sees appropriate. Analysis mechanisms are not included in this project. 
 
-## Deployment
+## Installation & Deployment
 
 All shell scripts included in this project can be deployed from any common Linux distribution. In most cases a system administrator must first enable the scripts to be executable in the following way:
 
@@ -16,6 +16,23 @@ If you are attempting to authorize all scripts in a specific directory "example-
 ```
 cd example-directory && sudo chmod +x *
 ```
+After all desired scripts are able to be executed you will need to automate the running of these scripts if you wish to continually run them at regular intervals. We recommend that the automation be performed by using the crontab tool which is automatically installed on most common Linux systems. You can view all current cron configurations with the crontab tool by issuing the following command in Terminal:
+```
+crontab -l
+```
+Please note that you are likely to not have any current cron configurations if this is your first time creating one, so the command above will not return any items if this is the case. To configure a cron job, use the crontab tool with the following command:
+```
+crontab -e
+```
+If the script that you are automating is named "myScript.sh" and if the script is located in a directory called "cryptobase" which is located in your user's home directory, then add the following line into the crontab file:
+```
+0 * * * * ~/cryptobase/myScript.sh
+```
+Beginning the crontab configuration with a zero ("0") will automate the intended script to run one time every hour on the hour. Other time configurations are available as well. You can read about the various configuration options in the [crontab manual pages](http://man7.org/linux/man-pages/man5/crontab.5.html). Save your adits to the crontab file by exiting the editor with [Control] + [X]. You will be prompted to save your changes, to which you type [y] and confirm the location name of the crontab file with pressing [Enter]. 
+
+This concludes the automation process for "myScropt.sh".
+
+
 ## Additional Notes
 
 All front end code can be found inside the 'docs' folder. The rest of the directories are dedicated to the various processes and functions of the back end. 
